@@ -1,0 +1,20 @@
+{
+  "$description": "Tier 2, theme 'dark'. Default for screens in dark mode. Every theme defines the same token names; only the references change.",
+  "color": {
+    "$type": "color",
+    "background": {
+      "default": { "$value": "{color.warm-grey.975}", "$description": "Page and canvas background." }
+    },
+    "text": {
+      "default": { "$value": "{color.warm-grey.50}", "$description": "Headlines and main text." },
+      "subtle": { "$value": "{color.warm-grey.400}", "$description": "All small and supporting text: labels, captions, header and footer, secondary numbers." }
+    },
+    "accent": { "$value": "{color.terracotta.300}", "$description": "Terracotta. Use sparingly, only on words or marks that carry meaning." },
+    "border": {
+      "default": { "$value": "{color.warm-grey.900}", "$description": "Hairlines and dividers. Decorative, not for meaning." }
+    },
+    "diagram": {
+      "line": { "$value": "{color.warm-grey.400}", "$description": "Connectors and arrows in diagrams. Needs 3:1 against every background the diagram can sit on." }
+    }
+  }
+}

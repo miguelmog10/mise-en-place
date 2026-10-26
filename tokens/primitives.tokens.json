@@ -1,0 +1,202 @@
+{
+  "$description": "Tier 1: raw values. Never use these directly in a product; use the semantic tokens in themes/. Steps are ordered by lightness (0 lightest); gaps are left on purpose for future values.",
+  "color": {
+    "$type": "color",
+    "warm-grey": {
+      "0": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9804,
+            0.9725,
+            0.9569
+          ],
+          "hex": "#faf8f4"
+        },
+        "$description": "light: background"
+      },
+      "50": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9294,
+            0.9137,
+            0.8863
+          ],
+          "hex": "#ede9e2"
+        },
+        "$description": "dark: text"
+      },
+      "100": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9137,
+            0.898,
+            0.8706
+          ],
+          "hex": "#e9e5de"
+        },
+        "$description": "paper: background"
+      },
+      "200": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8667,
+            0.8431,
+            0.8039
+          ],
+          "hex": "#ddd7cd"
+        },
+        "$description": "light: border"
+      },
+      "300": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7882,
+            0.7608,
+            0.7176
+          ],
+          "hex": "#c9c2b7"
+        },
+        "$description": "paper: border"
+      },
+      "400": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6627,
+            0.6392,
+            0.6039
+          ],
+          "hex": "#a9a39a"
+        },
+        "$description": "dark: subtle text"
+      },
+      "500": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.502,
+            0.4784,
+            0.4431
+          ],
+          "hex": "#807a71"
+        },
+        "$description": "paper: diagram lines. Chosen to keep 3:1 against white, GitHub dark and paper backgrounds"
+      },
+      "700": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3608,
+            0.3412,
+            0.3137
+          ],
+          "hex": "#5c5750"
+        },
+        "$description": "light: subtle text"
+      },
+      "750": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3412,
+            0.3216,
+            0.2941
+          ],
+          "hex": "#57524b"
+        },
+        "$description": "paper: subtle text"
+      },
+      "900": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.2275,
+            0.2157,
+            0.2
+          ],
+          "hex": "#3a3733"
+        },
+        "$description": "dark: border"
+      },
+      "950": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1333,
+            0.1255,
+            0.1137
+          ],
+          "hex": "#22201d"
+        },
+        "$description": "paper: text"
+      },
+      "975": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1137,
+            0.1098,
+            0.102
+          ],
+          "hex": "#1d1c1a"
+        },
+        "$description": "dark: background"
+      },
+      "1000": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1059,
+            0.102,
+            0.0941
+          ],
+          "hex": "#1b1a18"
+        },
+        "$description": "light: text"
+      }
+    },
+    "terracotta": {
+      "300": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8902,
+            0.5647,
+            0.4235
+          ],
+          "hex": "#e3906c"
+        },
+        "$description": "dark: accent"
+      },
+      "600": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6588,
+            0.2902,
+            0.1569
+          ],
+          "hex": "#a84a28"
+        },
+        "$description": "light: accent"
+      },
+      "700": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6118,
+            0.2667,
+            0.149
+          ],
+          "hex": "#9c4426"
+        },
+        "$description": "paper: accent"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "mise-en-place",
+  "version": "0.1.0",
+  "description": "Miguel Morales's personal design system: tokens, themes and usage rules for docs, diagrams, slides and carousels.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Miguel Morales",
+  "repository": "github:miguelmog10/mise-en-place",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "verify": "npm run build && npm run check",
+    "github:plan": "node scripts/setup-github.mjs --dry-run",
+    "github:setup": "node scripts/setup-github.mjs --tag"
+  }
+}

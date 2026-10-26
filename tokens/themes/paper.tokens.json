@@ -1,0 +1,20 @@
+{
+  "$description": "Tier 2, theme 'paper'. Warm grey paper that sits comfortably on light and dark hosts. Default for fixed media: images, PDFs, carousels and diagrams. Every theme defines the same token names; only the references change.",
+  "color": {
+    "$type": "color",
+    "background": {
+      "default": { "$value": "{color.warm-grey.100}", "$description": "Page and canvas background." }
+    },
+    "text": {
+      "default": { "$value": "{color.warm-grey.950}", "$description": "Headlines and main text." },
+      "subtle": { "$value": "{color.warm-grey.750}", "$description": "All small and supporting text: labels, captions, header and footer, secondary numbers." }
+    },
+    "accent": { "$value": "{color.terracotta.700}", "$description": "Terracotta. Use sparingly, only on words or marks that carry meaning." },
+    "border": {
+      "default": { "$value": "{color.warm-grey.300}", "$description": "Hairlines and dividers. Decorative, not for meaning." }
+    },
+    "diagram": {
+      "line": { "$value": "{color.warm-grey.500}", "$description": "Connectors and arrows in diagrams. Needs 3:1 against every background the diagram can sit on." }
+    }
+  }
+}

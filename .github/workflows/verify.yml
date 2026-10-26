@@ -1,0 +1,25 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build tokens
+        run: npm run build
+      - name: Fail if build/ is out of date
+        run: git diff --exit-code -- build || (echo "build/ is out of date. Run npm run build and commit the result." && exit 1)
+      - name: Check contrast
+        run: npm run check
