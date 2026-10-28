@@ -1,0 +1,52 @@
+{
+  "$description": "Tier 2, screen family, theme 'dark' (night service). Websites, docs pages and the Knowledge Automata guide in dark mode.",
+  "color": {
+    "$type": "color",
+    "background": {
+      "default": {
+        "$value": "{color.stone.925}",
+        "$description": "Page background (tile)."
+      },
+      "accent": {
+        "$value": "{color.tomato-tint.300}",
+        "$description": "Accent tint for selected rows and quotes. Fill only, never text."
+      }
+    },
+    "surface": {
+      "default": {
+        "$value": "{color.stone.875}",
+        "$description": "Cards and panels (ticket paper)."
+      }
+    },
+    "text": {
+      "default": {
+        "$value": "{color.stone.75}",
+        "$description": "Headlines and main text (ink)."
+      },
+      "subtle": {
+        "$value": "{color.stone.350}",
+        "$description": "All small and supporting text: labels, captions, planned items."
+      }
+    },
+    "accent": {
+      "$value": "{color.tomato.300}",
+      "$description": "Tomato. Kickers, focus, the one mark that carries meaning."
+    },
+    "border": {
+      "default": {
+        "$value": "{color.stone.800}",
+        "$description": "Hairlines. Decorative, not held to 3:1, never carries meaning alone."
+      },
+      "strong": {
+        "$value": "{color.stone.500}",
+        "$description": "Outlines that carry meaning, such as planned items. Needs 3:1 on background and surface."
+      }
+    },
+    "diagram": {
+      "line": {
+        "$value": "{color.stone.350}",
+        "$description": "Connectors and arrows in diagrams. Same as text.subtle, as in the editorial light and dark themes."
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "$description": "Tier 2, theme 'paper'. Warm grey paper that sits comfortably on light and dark hosts. Default for fixed media: images, PDFs, carousels and diagrams. Every theme defines the same token names; only the references change.",
+  "$description": "Tier 2, editorial family, theme 'paper'. Warm grey paper that sits comfortably on light and dark hosts. Default for fixed media: images, PDFs, carousels and diagrams. Every theme defines the same token names; only the references change.",
   "color": {
     "$type": "color",
     "background": {

@@ -1,5 +1,5 @@
 {
-  "$description": "Tier 2, theme 'dark'. Default for screens in dark mode. Every theme defines the same token names; only the references change.",
+  "$description": "Tier 2, editorial family, theme 'dark'. Fixed media in dark mode, and the dark default of build/tokens.css (as in v0.1). Every theme defines the same token names; only the references change.",
   "color": {
     "$type": "color",
     "background": {

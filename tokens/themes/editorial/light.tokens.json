@@ -1,5 +1,5 @@
 {
-  "$description": "Tier 2, theme 'light'. Default for screens in light mode. Every theme defines the same token names; only the references change.",
+  "$description": "Tier 2, editorial family, theme 'light'. Fixed media in light mode, and the default of build/tokens.css (as in v0.1). Every theme defines the same token names; only the references change.",
   "color": {
     "$type": "color",
     "background": {

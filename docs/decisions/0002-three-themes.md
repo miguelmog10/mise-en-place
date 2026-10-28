@@ -1,6 +1,6 @@
 # 0002. Three themes: light, dark, paper
 
-- Status: accepted
+- Status: superseded in part by [0009](0009-two-theme-families.md): screens now use the screen family
 - Date: 2026-10-26
 
 ## Context

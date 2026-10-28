@@ -1,0 +1,42 @@
+{
+  "$description": "Editorial family: type that is specific to the editorial themes (light, dark, paper). Values are the v0.1 ones and keep their CSS names.",
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "serif": {
+        "$value": [
+          "Lora",
+          "Georgia",
+          "serif"
+        ],
+        "$description": "Headlines, quotes, kickers, numerals."
+      },
+      "sans": {
+        "$value": [
+          "Inter",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif"
+        ],
+        "$description": "Body, labels, header and footer."
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "body": {
+        "$value": 1.5,
+        "$description": "Web body. The canvas uses canvas.font.line-height.body."
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$description": "In em, emitted with the unit by the build.",
+      "label": {
+        "$value": 0.16,
+        "$description": "Uppercase labels only."
+      }
+    }
+  }
+}

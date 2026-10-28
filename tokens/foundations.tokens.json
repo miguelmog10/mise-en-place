@@ -1,27 +1,8 @@
 {
-  "$description": "Theme-independent foundations: type, spacing, lines. Two scales: web (rem, for screens and docs) and canvas (px, for fixed-size images such as the 1080 x 1350 carousel).",
+  "$description": "Shared foundations for both theme families: type scale, spacing, lines and canvas sizes. Family-specific type (fonts, body line height, label spacing) lives in tokens/themes/<family>/family.tokens.json. Two scales: web (rem, for screens and docs) and canvas (px, for fixed-size images such as the 1080 x 1350 carousel).",
   "font": {
     "family": {
       "$type": "fontFamily",
-      "serif": {
-        "$value": [
-          "Lora",
-          "Georgia",
-          "serif"
-        ],
-        "$description": "Headlines, quotes, kickers, numerals."
-      },
-      "sans": {
-        "$value": [
-          "Inter",
-          "system-ui",
-          "-apple-system",
-          "Segoe UI",
-          "Roboto",
-          "sans-serif"
-        ],
-        "$description": "Body, labels, header and footer."
-      },
       "system": {
         "$value": [
           "system-ui",
@@ -48,6 +29,15 @@
       }
     },
     "size": {
+      "$type": "dimension",
+      "$description": "Web scale. 16px root. Body copy is 300.",
+      "050": {
+        "$value": {
+          "value": 0.75,
+          "unit": "rem"
+        },
+        "$description": "12px. Small uppercase labels (screen family, mono)."
+      },
       "100": {
         "$value": {
           "value": 0.875,
@@ -97,8 +87,13 @@
         },
         "$description": "48px. Display headings."
       },
-      "$type": "dimension",
-      "$description": "Web scale. 16px root. Body copy is 300."
+      "800": {
+        "$value": {
+          "value": 4.5,
+          "unit": "rem"
+        },
+        "$description": "72px. Hero display heading, one per page (screen family)."
+      }
     },
     "line-height": {
       "$type": "number",
@@ -107,10 +102,6 @@
       },
       "list": {
         "$value": 1.3
-      },
-      "body": {
-        "$value": 1.5,
-        "$description": "Web body. The canvas uses canvas.font.line-height.body."
       }
     },
     "letter-spacing": {
@@ -121,10 +112,6 @@
       },
       "section": {
         "$value": 0.02
-      },
-      "label": {
-        "$value": 0.16,
-        "$description": "Uppercase labels only."
       }
     }
   },
@@ -196,12 +183,40 @@
         },
         "$description": "Dividers on screen."
       },
+      "mark": {
+        "$value": {
+          "value": 1.5,
+          "unit": "px"
+        },
+        "$description": "Status marks: built and planned outlines, diagram boxes, secondary buttons."
+      },
+      "frame": {
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        },
+        "$description": "Ink rule under a masthead and above a footer, dashed ticket top edge, focus ring."
+      },
       "rule": {
         "$value": {
           "value": 3,
           "unit": "px"
         },
-        "$description": "Short accent rule under a headline on screen."
+        "$description": "Short accent rule under a headline on screen; the rail that stations hang from."
+      },
+      "double": {
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        },
+        "$description": "Double bottom border of a data store on screen (border-style: double)."
+      },
+      "edge": {
+        "$value": {
+          "value": 6,
+          "unit": "px"
+        },
+        "$description": "Accent top edge of the one focused box in a screen diagram."
       }
     },
     "radius": {

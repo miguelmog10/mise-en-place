@@ -2,6 +2,31 @@
 
 How the design system evolves, recorded as it happens. Versions follow the rules in the [README](README.md#versioning).
 
+## [0.2.0] - 2026-10-28
+
+A second theme family for screens. Requested by the Knowledge Automata guide, which pins `build/tokens.css` and the screen Mermaid themes to this tag.
+
+**New**
+
+- **Two theme families** in one repo: editorial (everything in v0.1) and screen. Shared foundations hold the scales, line widths, accessibility rules and the diagram status vocabulary ([ADR 0009](docs/decisions/0009-two-theme-families.md)).
+- **Screen theme, "The pass"**: light (day service) and dark (night service), with tile, ticket paper, ink and tomato; Newsreader, Instrument Sans and JetBrains Mono ([ADR 0010](docs/decisions/0010-screen-theme-the-pass.md), [screen.md](guidelines/screen.md)). Use it with `<html data-family="screen">`.
+- New roles in the screen family: `surface.default`, `border.strong`, `background.accent`. New primitives: `stone`, `tomato`, `tomato-tint`.
+- Screen components: focus ring, 44px targets, buttons, selected state, status marks (`BUILT`, `PLANNED`, `STAND-IN`, `CURRENT STEP`), ticket card, rail, and the "model proposed / code checked" pair.
+- Shared scale steps `font.size.050` (12px) and `font.size.800` (72px); line widths `border.width.mark` (1.5px), `frame` (2px), `double` (4px) and `edge` (6px).
+- **Diagram rules** ([ADR 0011](docs/decisions/0011-diagram-legend-and-sequence-pattern.md)): a legend on every diagram with more than one status (added to the starter, the README and the guideline example), focus and data stores per family, and a sequence pattern that passes 4.5:1 on white and dark.
+- `build/mermaid/sequence-starter.mmd`, `theme-screen-light.json` and `theme-screen-dark.json`. Every Mermaid theme file now also carries `classDefs` and a ready `frontmatter` block.
+- Known GitHub limits documented: node shadows, no custom fonts or theme switching, scaling to about 900px ([diagrams.md](guidelines/diagrams.md#known-limits-on-github)).
+- `npm run check` covers every theme in every family, on background and surface, and text on the accent tint (47 rules).
+- Guidelines split: [foundations.md](guidelines/foundations.md) (shared), [editorial.md](guidelines/editorial.md), [screen.md](guidelines/screen.md).
+
+**Changed**
+
+- Editorial theme files moved to `tokens/themes/editorial/`. `font.family.serif`, `font.family.sans`, `font.line-height.body` and `font.letter-spacing.label` moved into `editorial/family.tokens.json`. CSS names and values are unchanged, and editorial is still what `build/tokens.css` applies with no attribute.
+- `tokens.resolved.json` adds `defaultFamily`, `shared` and `families`. The v0.1 `foundations` and `themes` keys stay, as the editorial view.
+- Mermaid message and loop text are ink instead of `diagram.line` (3.39:1 on paper, which failed 4.5:1).
+- The starter's flow to a planned component is now dotted, as the vocabulary says.
+- [AGENTS.md](AGENTS.md): screens use the screen family; typography and diagram rules per family.
+
 ## [0.1.1] - 2026-10-28
 
 **Fixed**
