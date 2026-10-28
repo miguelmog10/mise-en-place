@@ -6,7 +6,7 @@
 
 The style is minimal, editorial and typography-led: warm grey paper, near-black ink, one terracotta accent, square corners, and accessible contrast in every theme.
 
-**Status:** v0.1.0, prototype scale (see [Scale](#scale)).
+**Status:** v0.1.1, prototype scale (see [Scale](#scale)).
 
 ## Use it
 
@@ -27,6 +27,7 @@ Pin a version when you depend on it, for example `https://raw.githubusercontent.
 ---
 config:
   theme: base
+  fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Helvetica\", \"Arial\", sans-serif"
   themeVariables:
     background: "#e9e5de"
     fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Helvetica\", \"Arial\", sans-serif"

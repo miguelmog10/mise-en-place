@@ -84,7 +84,7 @@ const themeVariables = {
 };
 fs.writeFileSync(
   path.join(OUT, "mermaid", "theme.json"),
-  JSON.stringify({ $comment: HEADER, theme: "base", themeVariables }, null, 2) + "\n",
+  JSON.stringify({ $comment: HEADER, theme: "base", fontFamily: font, themeVariables }, null, 2) + "\n",
 );
 
 const classDefs = [
@@ -96,7 +96,9 @@ const classDefs = [
 const yaml = (obj, indent) =>
   Object.entries(obj).map(([k, v]) => `${indent}${k}: ${JSON.stringify(v)}`).join("\n");
 
-const frontmatter = `---\nconfig:\n  theme: base\n  themeVariables:\n${yaml(themeVariables, "    ")}\n---`;
+// Mermaid 11 reads fontFamily from the config root, not from themeVariables.
+// Kept in both places: the themeVariables copy is harmless and older versions read it.
+const frontmatter = `---\nconfig:\n  theme: base\n  fontFamily: ${JSON.stringify(font)}\n  themeVariables:\n${yaml(themeVariables, "    ")}\n---`;
 
 fs.writeFileSync(
   path.join(OUT, "mermaid", "starter.mmd"),
