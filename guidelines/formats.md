@@ -7,7 +7,7 @@ How the foundations apply to each kind of output. Formats marked **not defined**
 Reference: the [launch carousel](https://github.com/miguelmog10/ai-assisted-software-engineering/tree/main/posts/carousel) (v1.0).
 
 - **Canvas:** 1080 x 1350 px (4:5 portrait). Export PDF, one slide per page, plus PNG.
-- **Theme:** paper.
+- **Theme:** editorial paper.
 - **Margins:** 92 top, 96 left and right, 84 bottom (888px content width).
 - **Frame on every slide:**
   - Header: series label left, page number right ("03 / 10"), hairline below.
@@ -46,9 +46,9 @@ The v1.0 carousel predates this scale (its default headline was 86px). It stays 
 - Diagrams follow [diagrams.md](diagrams.md).
 - Writing follows [writing.md](writing.md).
 
-## Web pages
+## Web pages and docs sites
 
-Load `build/tokens.css`. Body `font.size.300` on `font.line-height.body`, headings in `font.family.serif`, one left-aligned column of about 70 characters.
+The screen family: load `build/tokens.css` and set `<html data-family="screen">`. Body `font.size.300` on `font.line-height.body`, headings in `font.family.serif`, IDs and paths in `font.family.mono`, one left-aligned column of about 70 characters. Components, status marks and shapes: [screen.md](screen.md).
 
 ## Slides (16:9)
 

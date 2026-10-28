@@ -1,7 +1,7 @@
 {
   "name": "mise-en-place",
-  "version": "0.1.1",
-  "description": "Miguel Morales's personal design system: tokens, themes and usage rules for docs, diagrams, slides and carousels.",
+  "version": "0.2.0",
+  "description": "Miguel Morales's personal design system: tokens, two theme families (editorial and screen) and usage rules for docs sites, diagrams, slides and carousels.",
   "private": true,
   "type": "module",
   "license": "MIT",

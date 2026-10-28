@@ -25,10 +25,13 @@ What gets easier, what gets harder, what we deferred.
 | # | Decision | Status |
 |---|---|---|
 | [0001](0001-dtcg-tokens-two-tiers.md) | Tokens in W3C DTCG format, two tiers | accepted |
-| [0002](0002-three-themes.md) | Three themes: light, dark, paper | accepted |
+| [0002](0002-three-themes.md) | Three themes: light, dark, paper | superseded in part by 0009 |
 | [0003](0003-zero-dependency-build.md) | Zero-dependency build, generated files committed | accepted |
 | [0004](0004-mermaid-on-github.md) | Mermaid on GitHub uses the paper theme | accepted |
 | [0005](0005-two-scales.md) | Separate web and canvas scales | accepted |
 | [0006](0006-mit-license.md) | MIT license | accepted |
 | [0007](0007-name-mise-en-place.md) | Name: mise-en-place | accepted |
 | [0008](0008-repo-settings-as-code.md) | Repo settings as code | accepted |
+| [0009](0009-two-theme-families.md) | Two theme families: editorial and screen | accepted |
+| [0010](0010-screen-theme-the-pass.md) | Screen theme: "The pass" | accepted |
+| [0011](0011-diagram-legend-and-sequence-pattern.md) | Diagram legend and sequence pattern | accepted |

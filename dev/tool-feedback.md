@@ -2,6 +2,14 @@
 
 Running notes on tools, SDKs and specs: what was confusing, missing or good. Newest first.
 
+## 2026-10-28: v0.1.1 and v0.2.0
+
+- **Mermaid 11, fontFamily:** read only from the root of `config`. Under `themeVariables` it is silently ignored and diagrams fall back to Trebuchet MS. Nothing warns; it showed up only by grepping the rendered SVG.
+- **Mermaid, one edge:** a `classDef` styles the whole outline, so a top edge on one box (the screen focus) is not possible without post-processing the SVG.
+- **Mermaid sequence diagrams, good:** `rect rgb(...)` puts a fill behind messages, which solves the host-background contrast problem with no theme change.
+- **DTCG 2025.10:** a token cannot also be a group, so `accent.subtle` cannot sit under the `accent` token. Named `background.accent` instead. The color object's `alpha` field handled the tint cleanly.
+- **Claude cloud workspace:** no GitHub account linked, so branches could not be pushed or PRs opened from the session. Changes went back to the local folder instead.
+
 ## 2026-10-26: rename and repo setup
 
 - **PowerShell + npm:** PowerShell drops `--` when it calls `npm.ps1`, so `npm run x -- --dry-run` hands `--dry-run` to npm instead of the script, and the script runs for real. Fix: npm scripts that carry their own flags (`github:plan`, `github:setup`), so nobody types `--`.

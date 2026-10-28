@@ -1,6 +1,6 @@
 # 0004. Mermaid on GitHub uses the paper theme
 
-- Status: accepted
+- Status: accepted, extended by [0011](0011-diagram-legend-and-sequence-pattern.md) (legend, sequence pattern)
 - Date: 2026-10-26
 
 ## Context

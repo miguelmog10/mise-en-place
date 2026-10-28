@@ -1,0 +1,88 @@
+{
+  "$description": "Screen family ('The pass'): type and component values specific to the screen themes (light, dark). Font names override the editorial ones under data-family=\"screen\", so var(--mep-font-family-serif) follows the family.",
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "serif": {
+        "$value": [
+          "Newsreader",
+          "Georgia",
+          "serif"
+        ],
+        "$description": "Display: headings, kickers, large numbers, quotes."
+      },
+      "sans": {
+        "$value": [
+          "Instrument Sans",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif"
+        ],
+        "$description": "Body, navigation, labels, buttons."
+      },
+      "mono": {
+        "$value": [
+          "JetBrains Mono",
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Consolas",
+          "monospace"
+        ],
+        "$description": "Every ID (ART-0001, DEC-0001), file paths, token counts, tickets, small uppercase labels."
+      }
+    },
+    "line-height": {
+      "$type": "number",
+      "body": {
+        "$value": 1.6,
+        "$description": "Screen body copy. Editorial web body is 1.5."
+      }
+    },
+    "letter-spacing": {
+      "$type": "number",
+      "$description": "In em, emitted with the unit by the build.",
+      "label": {
+        "$value": 0.08,
+        "$description": "Small uppercase labels, set in mono."
+      }
+    }
+  },
+  "focus": {
+    "$type": "dimension",
+    "ring": {
+      "width": {
+        "$value": "{border.width.frame}",
+        "$description": "Keyboard focus outline, in accent."
+      },
+      "offset": {
+        "$value": {
+          "value": 3,
+          "unit": "px"
+        },
+        "$description": "Gap between the element and its focus outline."
+      }
+    }
+  },
+  "size": {
+    "$type": "dimension",
+    "target": {
+      "min": {
+        "$value": {
+          "value": 44,
+          "unit": "px"
+        },
+        "$description": "Smallest click or tap target (WCAG 2.5.5). Prefer 48px where space allows."
+      }
+    }
+  },
+  "ticket": {
+    "rotate": {
+      "$type": "number",
+      "$value": -1.2,
+      "$description": "In degrees, emitted as deg. The one hero ticket per page only."
+    }
+  }
+}
