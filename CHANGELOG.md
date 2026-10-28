@@ -2,6 +2,12 @@
 
 How the design system evolves, recorded as it happens. Versions follow the rules in the [README](README.md#versioning).
 
+## [0.1.1] - 2026-10-28
+
+**Fixed**
+
+- Mermaid diagrams now use the system font stack. Mermaid 11 reads `fontFamily` only from the root of `config`, so the value under `themeVariables` was ignored and diagrams rendered in Mermaid's default (Trebuchet MS). The build now writes `fontFamily` at the config root of `build/mermaid/starter.mmd` and `build/mermaid/theme.json`, and keeps the `themeVariables` copy. The examples in the README and [diagrams.md](guidelines/diagrams.md) are updated. Checked with Mermaid CLI 11.16: the SVG now contains only the system stack.
+
 ## [0.1.0] - 2026-10-26
 
 First version, extracted from the launch carousel of [AI-Assisted Software Engineering](https://github.com/miguelmog10/ai-assisted-software-engineering/tree/main/posts/carousel) (v1.0) and tidied into a system.

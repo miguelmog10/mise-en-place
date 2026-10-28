@@ -37,6 +37,7 @@ Every meaning is carried by line style as well as color, so the diagram still re
 ---
 config:
   theme: base
+  fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Helvetica\", \"Arial\", sans-serif"
   themeVariables:
     background: "#e9e5de"
     fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Roboto\", \"Helvetica\", \"Arial\", sans-serif"
